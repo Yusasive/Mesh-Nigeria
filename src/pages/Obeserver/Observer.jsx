@@ -1,0 +1,96 @@
+import React from "react";
+import { motion } from "framer-motion";
+
+const Observer = () => {
+  const observersData = [
+    {
+      id: 1,
+      text: "GROUP 1: ABIA, ADAMAWA, AKWA IBOM.",
+      pdfLink:
+        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728550712/GROUP-1-ABIA_ADAMAWA_AKWA-IBOM_hnmczh.pdf",
+    },
+    {
+      id: 2,
+      text: "GROUP 2: BAUCHI, BAYELSA",
+      pdfLink:
+        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-2-BAUCHI-BAYELSA_yqrrhw.pdf",
+    },
+    {
+      id: 3,
+      text: "GROUP 3: BENUE, BORNU, CROSS RIVER, DELTA, EDO, EKITI, ENUGU",
+      pdfLink:
+        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-3-BENUE-BORNO-CROSS-RIVER-DELTA-EDO-EKITI-ENUGU_q9ionv.pdf",
+    },
+    {
+      id: 4,
+      text: "GROUP 4: FCT, GOMBE, JIGAWA, KADUNA",
+      pdfLink:
+        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-4-FCT-GOMBE-JIGAWA-KADUNA_cs0yhu.pdf",
+    },
+    {
+      id: 5,
+      text: "GROUP 5: KANO, KATSINA, KEBBI, KOGI, KWARA, LAGOS, NASARAWA, NIGER",
+      pdfLink:
+        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-5-KANO-KATSINA-KEBBI-KOGI-KWARA-LAGOS-NASARAWA-NIGER_bn0nno.pdf",
+    },
+    {
+      id: 6,
+      text: "GROUP 6: OGUN, ONDO, OSUN, OYO, PLATEAU",
+      pdfLink:
+        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-6-OGUN-ONDO-OSUN-OYO-PLATEAU_njpz3r.pdf",
+    },
+    {
+      id: 7,
+      text: "GROUP 7: RIVERS, SOKOTO, TARABA, YOBE, ZAMFARA",
+      pdfLink:
+        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-7-RIVERS-SOKOTO-TARABA-YOBE-ZAMFARA_xtdnje.pdf",
+    },
+  ];
+
+  return (
+    <div className="flex flex-col pt-12 mt-20">
+      <div className="space-y-3 px-8">
+        <h1 className="text-3xl lg:text-5xl text-primary font-bold text-center">
+          <span className="text-red-700">MESH</span> Observers list for the 2023
+          elections
+        </h1>
+        <p className="text-lg font-medium text-justify">
+          Education, Social and Health Mission (MESH), is one of the many
+          observers’ group accredited by Independent National Electoral
+          Commission (INEC) to observe the 2023 General Elections holding on the
+          25th February for Presidential and National Assembly and 11th March
+          for Governorship and Statehouse Elections.
+        </p>
+        <p className="text-lg font-medium text-justify">
+          MESH in achieving its objectives mobilized 658 observers from 34
+          States plus FCT from various Islamic Organizations and State Supreme
+          Council Offices. To view the list.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-8 mt-6 bg-secondary py-24">
+        {observersData.map(({ id, text, pdfLink }) => (
+          <motion.div
+            key={id}
+            className="p-4 border bg-white border-gray-300 rounded-lg shadow-sm shadow-gray-100 cursor-pointer hover:bg-gray-100"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            <h2 className="text-lg font-semibold">{text}</h2>
+            <a
+              href={pdfLink}
+              download
+              className="text-base text-blue-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Click here to view
+            </a>
+          </motion.div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default Observer;
