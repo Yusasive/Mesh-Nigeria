@@ -31,7 +31,7 @@ const Blogs = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 py-12 mt-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 lg:px-8 py-12 mt-20 space-y-6 md:space-y-0">
       {blogs.map((blog, index) => (
         <motion.div
           key={index}
@@ -43,6 +43,7 @@ const Blogs = () => {
           <img
             src={blog.image}
             alt={blog.title}
+            loading="lazy"
             className="w-full h-48 object-cover rounded"
           />
           <h3 className="text-xl font-semibold mt-2">{blog.title}</h3>

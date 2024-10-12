@@ -1,55 +1,55 @@
 import React from "react";
 import { motion } from "framer-motion";
+import localPdf1 from "../../assets/documents/GROUP-1-ABIA_ADAMAWA_AKWA-IBOM.pdf";
+import localPdf2 from "../../assets/documents/GROUP-2-BAUCHI-BAYELSA.pdf";
+import localPdf3 from "../../assets/documents/GROUP-3-BENUE-BORNO-CROSS-RIVER-DELTA-EDO-EKITI-ENUGU.pdf";
+import localPdf4 from "../../assets/documents/GROUP-4-FCT-GOMBE-JIGAWA-KADUNA.pdf";
+import localPdf5 from "../../assets/documents/GROUP-5-KANO-KATSINA-KEBBI-KOGI-KWARA-LAGOS-NASARAWA-NIGER.pdf";
+import localPdf6 from "../../assets/documents/GROUP-6-OGUN-ONDO-OSUN-OYO-PLATEAU.pdf";
+import localPdf7 from "../../assets/documents/GROUP-7-RIVERS-SOKOTO-TARABA-YOBE-ZAMFARA.pdf";
 
 const Observer = () => {
   const observersData = [
     {
       id: 1,
       text: "GROUP 1: ABIA, ADAMAWA, AKWA IBOM.",
-      pdfLink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728550712/GROUP-1-ABIA_ADAMAWA_AKWA-IBOM_hnmczh.pdf",
+      pdfLink: localPdf1,
     },
     {
       id: 2,
       text: "GROUP 2: BAUCHI, BAYELSA",
-      pdfLink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-2-BAUCHI-BAYELSA_yqrrhw.pdf",
+      pdfLink: localPdf2,
     },
     {
       id: 3,
       text: "GROUP 3: BENUE, BORNU, CROSS RIVER, DELTA, EDO, EKITI, ENUGU",
-      pdfLink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-3-BENUE-BORNO-CROSS-RIVER-DELTA-EDO-EKITI-ENUGU_q9ionv.pdf",
+      pdfLink: localPdf3,
     },
     {
       id: 4,
       text: "GROUP 4: FCT, GOMBE, JIGAWA, KADUNA",
-      pdfLink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-4-FCT-GOMBE-JIGAWA-KADUNA_cs0yhu.pdf",
+      pdfLink: localPdf4,
     },
     {
       id: 5,
       text: "GROUP 5: KANO, KATSINA, KEBBI, KOGI, KWARA, LAGOS, NASARAWA, NIGER",
-      pdfLink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-5-KANO-KATSINA-KEBBI-KOGI-KWARA-LAGOS-NASARAWA-NIGER_bn0nno.pdf",
+      pdfLink: localPdf5,
     },
     {
       id: 6,
       text: "GROUP 6: OGUN, ONDO, OSUN, OYO, PLATEAU",
-      pdfLink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-6-OGUN-ONDO-OSUN-OYO-PLATEAU_njpz3r.pdf",
+      pdfLink: localPdf6,
     },
     {
       id: 7,
       text: "GROUP 7: RIVERS, SOKOTO, TARABA, YOBE, ZAMFARA",
-      pdfLink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728551600/GROUP-7-RIVERS-SOKOTO-TARABA-YOBE-ZAMFARA_xtdnje.pdf",
+      pdfLink: localPdf7,
     },
   ];
 
   return (
     <div className="flex flex-col pt-12 mt-20">
-      <div className="space-y-3 px-8">
+      <div className="space-y-3 px-4 lg:px-8">
         <h1 className="text-3xl lg:text-5xl text-primary font-bold text-center">
           <span className="text-red-700">MESH</span> Observers list for the 2023
           elections
@@ -74,16 +74,13 @@ const Observer = () => {
             className="p-4 border bg-white border-gray-300 rounded-lg shadow-sm shadow-gray-100 cursor-pointer hover:bg-gray-100"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}>
             <h2 className="text-lg font-semibold">{text}</h2>
             <a
               href={pdfLink}
-              download
               className="text-base text-blue-500"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               Click here to view
             </a>
           </motion.div>

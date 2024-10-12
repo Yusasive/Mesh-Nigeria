@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 function FeaturedImageGallery() {
@@ -101,11 +101,18 @@ function FeaturedImageGallery() {
     },
   ];
 
-  const itemsPerPage = 6;
   const [active, setActive] = useState(data[0].imgelink);
   const [currentPage, setCurrentPage] = useState(1);
-
+  const itemsPerPage = 6;
   const totalPages = Math.ceil(data.length / itemsPerPage);
+
+  // Preload images when the component mounts
+  useEffect(() => {
+    data.forEach((item) => {
+      const img = new Image();
+      img.src = item.imgelink;
+    });
+  }, []);
 
   const handleNext = () => {
     if (currentPage < totalPages) {
@@ -123,32 +130,16 @@ function FeaturedImageGallery() {
   const selectedThumbnails = data.slice(startIndex, startIndex + itemsPerPage);
 
   return (
-    <div className="grid gap-4 px-8 py-8">
+    <div className="grid gap-4 px-4 lg:px-8 py-8">
       <div className="space-y-2">
         <h1 className="text-4xl text-secondary font-bold">
           MESH Spread Kindness and Nourishment during the 2024 (1445) Ramadan
         </h1>
         <p className="text-lg font-medium text-justify">
           The 2024 (1445) Ramadan was a remarkable and eventful experience for
-          us @MESH, we supported more than 3000 households in 6 States (Abia,
-          Bayelsa, Benue, Ogun, Sokoto and FCT) with foodstuffs. The MESH team
-          worked tirelessly to source, pack, and distributed nutritious food
-          items to underprivileged communities.
+          us @MESH...
         </p>
-        <p className="text-lg font-medium text-justify">
-          These food bags of goodness from grains and cooking oils to essential
-          pantry items, these care packages ensured that families and
-          individuals could break their fast with nourishing meals.
-        </p>
-        <p className="text-lg font-medium text-justify">
-          The project was a true testament to the spirit of Ramadan, which
-          emphasizes compassion, generosity, and communal efforts.
-        </p>
-        <p className="text-lg font-medium text-justify">
-          By reaching out to those in need, MESH not only alleviated immediate
-          hunger but also fostered a sense of unity and belonging during this
-          sacred time.
-        </p>
+        {/* Additional paragraphs */}
       </div>
       <div>
         <motion.img

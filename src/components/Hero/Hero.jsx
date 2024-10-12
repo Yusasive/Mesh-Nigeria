@@ -34,7 +34,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row  lg:max-h-max relative px-8 py-12">
+    <div className="flex flex-col lg:flex-row  lg:max-h-max relative px-4 lg:px-8 py-12">
       {/* brand info (left side) */}
       <div className="flex flex-col justify-center py-14 md:pr-16 xl:pr-40 md:py-0 w-full lg:w-[70%]">
         <div className="text-center md:text-left space-y-2">
@@ -59,8 +59,8 @@ const Hero = () => {
             variants={SlideRight(0.8)}
             initial="hidden"
             animate="visible"
-            className="flex gap-8 justify-center md:justify-start !mt-8 items-center">
-            <button className="flex justify-end items-center gap-2 font-semibold">
+            className="flex flex-col lg:flex-row gap-8 justify-center md:justify-start !mt-8 lg:items-center">
+            <button className="flex lg:justify-end lg:items-center gap-2 font-semibold">
               <span className="w-10 h-10 bg-secondary/15 rounded-full flex justify-center items-center">
                 <FaPhone className="text-secondary" />
               </span>

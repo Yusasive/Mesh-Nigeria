@@ -28,7 +28,7 @@ const Mission = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-3xl lg:text-5xl font-bold text-red-700">
+          <h1 className="text-3xl lg:text-5xl font-bold text-red-700 my-4">
             OUR VISION,  MISSION AND GOALS
           </h1>
           <div className="space-y-4 mt-6">
@@ -68,7 +68,7 @@ const Mission = () => {
         </motion.h1>
         
         <motion.ul
-          className="text-base font-normal text-justify list-disc pl-5 space-y-2"
+          className="text-base font-normal text-justify list-inside list-disc pl-2 space-y-2"
           variants={SlideLeft}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

@@ -54,12 +54,10 @@ const WhyChooseData = [
 const WhyChooseUs = () => {
   return (
     <div className="bg-[#f9fafc]">
-      <div className="px-8 py-24">
-        {/* header section */}
+      <div className="px-4 lg:px-8 py-24">
         <div className="space-y-4 p-6 text-center max-w-[500px] mx-auto mb-5">
           <p className="font-semibold text-3xl">Our Statements</p>
         </div>
-        {/* cards section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
           {WhyChooseData.map((item) => {
             return (
@@ -68,7 +66,6 @@ const WhyChooseUs = () => {
                 initial="hidden"
                 whileInView={"visible"}
                 className="space-y-4 p-6 rounded-xl shadow-[0_0_22px_rgba(0,0,0,0.15)]">
-                {/* icon section */}
                 <div
                   style={{ backgroundColor: item.bgColor }}
                   className="w-10 h-10 rounded-lg flex justify-center items-center text-white">
