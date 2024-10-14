@@ -29,7 +29,7 @@ const Report = () => {
   };
 
   return (
-    <div className="space-y-5 py-12 mt-20 px-4 lg:px-8">
+    <div className="space-y-5 py-12 mt-4 lg:mt-20 px-4 lg:px-8">
       <h1 className="text-3xl lg:text-5xl text-blue-900 font-bold">
         MESH Reports
       </h1>

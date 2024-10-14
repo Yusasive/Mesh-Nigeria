@@ -49,7 +49,7 @@ function Result() {
   };
 
   return (
-    <div className="slider-container py-12 mt-20">
+    <div className="slider-container py-12 mt-6 lg:mt-20">
       <div>
         <h1 className="text-3xl lg:text-5xl font-bold text-center text-primary py-10">MESH Beneficiaries Panorama</h1>
       </div>

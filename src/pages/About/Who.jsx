@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Who = () => {
   return (
-    <div className="flex flex-col lg:flex-row px-8 space-x-6 mb-6 lg:mb-0">
+    <div className="flex flex-col lg:flex-row px-4 lg:px-8 space-x-6 mb-6 lg:mb-0">
       <motion.div
         className="lg:w-[50%] flex items-center justify-center"
         variants={SlideLeft}

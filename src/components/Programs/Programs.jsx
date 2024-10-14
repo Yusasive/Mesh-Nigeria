@@ -28,13 +28,13 @@ const Programs = () => {
   };
 
   return (
-    <div className="container sm:py-12 bg-white text-black">
+    <div className="lg:container  sm:py-12 bg-white text-black">
       <div className="flex flex-col items-center justify-center pt-2">
         <h2 className="text-4xl text-center font-montserrat font-semibold">
           MESH NGO
         </h2>
       </div>
-      <div className="flex flex-col sm:flex-row md:p-4 border-2 rounded-lg m-6 min-h-fit">
+      <div className="flex flex-col sm:flex-row md:p-4 border-2 rounded-lg m-3 lg:m-6 min-h-fit">
         <div className="md:w-full md:mx-auto flex flex-col items-center justify-center border-b-4 md:border-b-0 md:border-r-4 md:h-[400px]">
           {tabs.map((tab, index) => (
             <motion.div

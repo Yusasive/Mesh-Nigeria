@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Mission = () => {
   return (
-    <div className="px-8">
+    <div className="px-4 lg:px-8">
       <div className="flex flex-col lg:flex-row lg:space-x-6">
         <motion.div
           className="lg:w-[40%]"
