@@ -13,6 +13,11 @@ export const NavbarMenu = [
     id: 3,
     title: "Programmes",
     link: "#",
+    subMenu: [
+      { id: 31, title: "Social Interventons", link: "/programmes/social" },
+      { id: 32, title: "Education Interventions", link: "/programmes/educationa" },
+      { id: 33, title: "Health Interventions", link: "/programmes/healths" },
+    ],
   },
   {
     id: 4,

@@ -48,7 +48,7 @@ const Observer = () => {
   ];
 
   return (
-    <div className="flex flex-col pt-12 mt-20">
+    <div className="flex flex-col pt-12 mt-14 lg:mt-20">
       <div className="space-y-3 px-4 lg:px-8">
         <h1 className="text-3xl lg:text-5xl text-primary font-bold text-center">
           <span className="text-red-700">MESH</span> Observers list for the 2023

@@ -68,7 +68,7 @@ const Hero = () => {
           }}
           modules={[Autoplay]}>
           <SwiperSlide>
-            <div className="bg-custom-bg1 bg-cover bg-center h lg:h-screen flex items-center justify-center rounded-3xl">
+            <div className="bg-custom-bg1 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
             <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">WORLD HIJAB DAY</h1>
             </div>
           </SwiperSlide>
