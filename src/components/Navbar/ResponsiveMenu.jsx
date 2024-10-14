@@ -11,8 +11,8 @@ const ResponsiveMenu = ({ isOpen, toggleMenu }) => {
           exit={{ opacity: 0, y: -100 }}
           transition={{ duration: 0.3 }}
           className="fixed top-14 left-0 w-full h-screen z-50 lg:hidden">
-          <div className="text-xl font-semibold uppercase bg-white bg-opacity-60 backdrop-blur-md backdrop-filter shadow-md text-black py-10 m-6 rounded-3xl">
-            <ul className="flex flex-col justify-center items-center gap-10">
+          <div className="text-base font-semibold bg-white bg-opacity-60 backdrop-blur-md backdrop-filter shadow-md text-black py-4 m-4 rounded-3xl">
+            <ul className="flex flex-col justify-center items-center gap-6">
               <li>
                 <NavLink
                   to="/"

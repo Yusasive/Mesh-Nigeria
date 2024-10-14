@@ -22,12 +22,10 @@ const Navbar = () => {
         transition={{ duration: 0.5, delay: 0.5 }}
       >
         <div className="fixed top-0 left-0 right-0 z-50 flex justify-between items-center py-6 px-8 bg-white bg-opacity-60 backdrop-blur-md backdrop-filter shadow-md">
-          {/* Logo section */}
           <div className=" flex  ">
             <img src={Logo} alt="NavbarLogo" className="h-10 w-16" />
           </div>
 
-          {/* Menu section */}
           <div className="hidden lg:block">
             <ul className="flex items-center gap-6">
               {NavbarMenu.map((item) => (
@@ -44,15 +42,11 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-
-          {/* Mobile Hamburger Menu */}
           <div className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <MdClose className="text-4xl" /> : <MdMenu className="text-4xl" />}
           </div>
         </div>
       </motion.div>
-
-      {/* Mobile Sidebar section */}
       <ResponsiveMenu isOpen={isOpen} />
     </>
   );

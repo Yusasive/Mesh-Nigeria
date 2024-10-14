@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { SlideRight } from "../../utility/animation";
 
 const Programs = () => {
   const [activeTab, setActiveTab] = useState("THE BACKGROUND OF MESH");
@@ -29,14 +31,16 @@ const Programs = () => {
     <div className="container sm:py-12 bg-white text-black">
       <div className="flex flex-col items-center justify-center pt-2">
         <h2 className="text-4xl text-center font-montserrat font-semibold">
-         MESH NGO
+          MESH NGO
         </h2>
       </div>
       <div className="flex flex-col sm:flex-row md:p-4 border-2 rounded-lg m-6 min-h-fit">
         <div className="md:w-full md:mx-auto flex flex-col items-center justify-center border-b-4 md:border-b-0 md:border-r-4 md:h-[400px]">
           {tabs.map((tab, index) => (
-            <div
+            <motion.div
               key={index}
+              variants={SlideRight(0.4)}
+              whileHover={{ scale: 1.05 }}
               className={`tab-title cursor-pointer text-center text-lg font-bold p-3 font-montserrat ${
                 activeTab === tab.title
                   ? "active-tab text-white bg-primary m-2 rounded-lg"
@@ -45,13 +49,27 @@ const Programs = () => {
               onClick={() => handleTabClick(tab.title)}
             >
               {tab.title}
-            </div>
+            </motion.div>
           ))}
         </div>
-        <div className="w-full p-4 md:pl-8 ">
-          <p className="text-gray-700 font-medium text-base leading-6 text-justify">
-            {tabs.find((tab) => tab.title === activeTab)?.content}
-          </p>
+        <div className="w-full p-4 md:pl-8">
+          <AnimatePresence mode="wait">
+            {tabs
+              .filter((tab) => tab.title === activeTab)
+              .map((tab, index) => (
+                <motion.p
+                  key={index}
+                  variants={SlideRight(0.6)}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -20 }}
+                  transition={{ duration: 0.3 }}
+                  className="text-gray-700 font-medium text-base leading-6 text-justify"
+                >
+                  {tab.content}
+                </motion.p>
+              ))}
+          </AnimatePresence>
         </div>
       </div>
     </div>

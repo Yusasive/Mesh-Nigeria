@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"; 
 import { motion } from "framer-motion";
 
 const NavbarBanner = () => {
@@ -9,19 +9,12 @@ const NavbarBanner = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="bg-primary text-sm text-center font-semibold p-1 hidden lg:block relative  mt-[90px]"
+        className="bg-primary text-sm text-center font-semibold p-1 hidden lg:block relative mt-[90px]"
       >
-        Are you a university or school student for an online tutoring
-        partnership?
-        <a href="#" className="text-secondary ml-2">
+        Welcome to MESH Nigeria, an NGO of Nigerian Supreme Council for Islamic Affairs.
+        <a href="https://wa.link/knjzqd" className="text-secondary ml-2">
           Talk to us
         </a>
-        <div
-          className="absolute top-1/2 right-10 cursor-pointer -translate-y-1/2"
-          onClick={() => setIsOpen(false)}
-        >
-          X
-        </div>
       </motion.div>
     )
   );

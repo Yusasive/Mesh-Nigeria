@@ -1,104 +1,32 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
+import { SlideRight } from "../../utility/animation";
 function FeaturedImageGallery() {
   const data = [
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/1_kstlz8.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/2_m0uhmo.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/3_ujtpdy.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/4_xfbf4m.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/5_w7pjx1.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/6_nsykej.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/7_jvzbkl.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/8_v7tqub.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502799/9_rlavtl.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/10_gydtdc.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502799/11_yxyqh0.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/12_pvctih.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/13_phfcqt.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/14_xwgwxl.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/15_qt55pk.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/16_siz4hf.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/17_q5f1wt.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/18_ijezmw.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/19_lrhf1j.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/20_nevyfr.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/21_htmdma.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/22_thfmuo.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/23_cea7nf.jpg",
-    },
-    {
-      imgelink:
-        "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/24_tzl1kg.jpg",
-    },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/1_kstlz8.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/2_m0uhmo.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/3_ujtpdy.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/4_xfbf4m.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/5_w7pjx1.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/6_nsykej.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/7_jvzbkl.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/8_v7tqub.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502799/9_rlavtl.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/10_gydtdc.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502799/11_yxyqh0.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/12_pvctih.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/13_phfcqt.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/14_xwgwxl.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/15_qt55pk.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/16_siz4hf.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/17_q5f1wt.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502798/18_ijezmw.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502797/19_lrhf1j.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/20_nevyfr.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/21_htmdma.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/22_thfmuo.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502795/23_cea7nf.jpg" },
+    { imgelink: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728502796/24_tzl1kg.jpg" },
   ];
 
   const [active, setActive] = useState(data[0].imgelink);
@@ -106,7 +34,6 @@ function FeaturedImageGallery() {
   const itemsPerPage = 6;
   const totalPages = Math.ceil(data.length / itemsPerPage);
 
-  // Preload images when the component mounts
   useEffect(() => {
     data.forEach((item) => {
       const img = new Image();
@@ -136,8 +63,7 @@ function FeaturedImageGallery() {
           MESH Spread Kindness and Nourishment during the 2024 (1445) Ramadan
         </h1>
         <p className="text-lg font-medium text-justify">
-          The 2024 (1445) Ramadan was a remarkable and eventful experience for
-          us @MESH...
+          The 2024 (1445) Ramadan was a remarkable and eventful experience for us @MESH...
         </p>
         {/* Additional paragraphs */}
       </div>
@@ -147,6 +73,7 @@ function FeaturedImageGallery() {
           src={active}
           alt="Featured"
           key={active}
+          variants={SlideRight(0.4)}
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -156,8 +83,10 @@ function FeaturedImageGallery() {
         {selectedThumbnails.map(({ imgelink }, index) => (
           <motion.div
             key={index}
+            variants={SlideRight(0.6)}
             whileHover={{ scale: 1.1 }}
-            transition={{ type: "spring", stiffness: 300 }}>
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <img
               onClick={() => setActive(imgelink)}
               src={imgelink}
@@ -171,13 +100,15 @@ function FeaturedImageGallery() {
         <button
           onClick={handlePrevious}
           disabled={currentPage === 1}
-          className="px-4 py-2 bg-gray-300 rounded-md disabled:opacity-50">
+          className="px-4 py-2 bg-gray-300 rounded-md disabled:opacity-50"
+        >
           Previous
         </button>
         <button
           onClick={handleNext}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 bg-gray-300 rounded-md disabled:opacity-50">
+          className="px-4 py-2 bg-gray-300 rounded-md disabled:opacity-50"
+        >
           Next
         </button>
       </div>
