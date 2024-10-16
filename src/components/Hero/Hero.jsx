@@ -13,7 +13,7 @@ const SlideRight = (delay = 0) => ({
 const Hero = () => {
   return (
     <div className="flex flex-col lg:flex-row lg:max-h-max relative px-4 lg:px-8 mt-12 md:mt-0 mb-4 lg:my-12">
-      <div className="flex flex-col justify-center py-14 md:pr-16 xl:pr-40 md:py-0 w-full lg:w-[60%]">
+      <div className="flex flex-col justify-center py-14 md:pr-16 xl:pr-40 md:py-0 w-full lg:w-[65%]">
         <div className="text-center md:text-left space-y-2">
           <motion.h1
             variants={SlideRight(0.4)}
@@ -56,7 +56,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center relative w-full lg:w-[40%]">
+      <div className="flex justify-center items-center h-[400px] relative w-full lg:w-[35%]">
         <Swiper
           spaceBetween={30}
           slidesPerView={1}
@@ -68,97 +68,87 @@ const Hero = () => {
           }}
           modules={[Autoplay]}>
           <SwiperSlide>
-            <div className="bg-custom-bg1 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">WORLD HIJAB DAY</h1>
+            <div className="bg-custom-bg1 bg-cover bg-center h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">WORLD HIJAB DAY</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg2 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
+            <div className="bg-custom-bg2 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
              
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg3 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">ELECTION OBSERVERS</h1>
+            <div className="bg-custom-bg3 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">ELECTION OBSERVERS</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg4 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-              <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">RAMADAN FOOD DISTRIBUTION</h1>
+            <div className="bg-custom-bg4 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+              <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">RAMADAN FOOD DISTRIBUTION</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg5 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">RAMADAN FOOD DISTRIBUTION</h1>
+            <div className="bg-custom-bg5 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">RAMADAN FOOD DISTRIBUTION</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg6 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
+            <div className="bg-custom-bg6 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
              
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg7 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">JIAGAWA ZAKAT STATE DISTRIBUTION</h1>
+            <div className="bg-custom-bg7 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">JIAGAWA ZAKAT STATE DISTRIBUTION</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg8 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-             
+            <div className="bg-custom-bg9 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">OGUN STATE DISTRIBUTION</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg9 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">OGUN STATE DISTRIBUTION</h1>
+            <div className="bg-custom-bg10 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">THE OUTREACH CONTINUES</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg10 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">THE OUTREACH CONTINUES</h1>
+            <div className="bg-custom-bg11 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">JAIZ CHARITY AND DEVELOPMENT FOUNDATION</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg11 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">JAIZ CHARITY AND DEVELOPMENT FOUNDATION</h1>
+            <div className="bg-custom-bg12 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">JAIZ CHARITY AND DEVELOPMENT FOUNDATION</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg12 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">JAIZ CHARITY AND DEVELOPMENT FOUNDATION</h1>
+            <div className="bg-custom-bg13 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">RAMADAN FOOD DISTRIBUTION</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg13 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">RAMADAN FOOD DISTRIBUTION</h1>
+            <div className="bg-custom-bg14 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">SEX AND GENDER BASED VIOLENCE SENSITIZATION FOR SENIOR SECONDARY SCHOOL</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg14 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">SEX AND GENDER BASED VIOLENCE SENSITIZATION FOR SENIOR SECONDARY SCHOOL</h1>
+            <div className="bg-custom-bg15 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">WORLD HIJAB DAY/FREE CANCER SCREENING</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg15 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">WORLD HIJAB DAY/FREE CANCER SCREENING</h1>
+            <div className="bg-custom-bg16 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">GOAL GETTER GIRLS PROJECTS</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg16 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">GOAL GETTER GIRLS PROJECTS</h1>
+            <div className="bg-custom-bg18 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
+            <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">WORLD BREASTFEEDING WEEK CELEBRATION</h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="bg-custom-bg17 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-              
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-custom-bg18 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
-            <h1 className="text-3xl lg:text-5xl font-bold text-primary text-center">WORLD BREASTFEEDING WEEK CELEBRATION</h1>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="bg-custom-bg19 bg-cover bg-center h-screen flex items-center justify-center rounded-3xl">
+            <div className="bg-custom-bg19 bg-cover bg-center h-[300px] lg:h-[400px] flex items-end justify-center rounded-3xl">
              
             </div>
           </SwiperSlide>

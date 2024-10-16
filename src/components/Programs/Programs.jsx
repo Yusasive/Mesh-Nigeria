@@ -14,12 +14,27 @@ const Programs = () => {
     {
       title: "MANDATE OF MESH",
       content:
-        "The internship period is a three-month period that serves as a Demo to the small business. During this period, the students earn between 20,000 to 50,000 naira monthly and they are to help with content creation and posting on the brand's social media handles, as well as every other required digital marketing service. After the three-month internship period, if the students meet the delivery criteria, the payment by the SMEs is increased to between 100,000 - 200,000 monthly for a span of two years.",
+        "To strengthen and deepen the activities and services of MESH, the scope of its mandates has been expanded to include:",
+      list: [
+        "Education.",
+        "Social.",
+        "Health.",
+        "Leadership.",
+        "Good Governance, Transparency and Accountability.",
+        "Human Rights.",
+        "Environment and Community Development.",
+      ],
     },
     {
       title: "VALUES",
       content:
-        "Our revenue model is a commission model. Over the first month, RUMONEY earns a 20 percent commission of the student's pay and holds consistent review of the student's service. Based on delivery over the first month, and if they pass the set criteria, the commission is reduced to 15%, and in the third month, it's reduced to 10%. The 10% commission system continues through the two-year contract when eventually signed.",
+        "MESH core values are represented by the acronym I-PAD which means:",
+      list: [
+        "Integrity: We promote high moral compass and zero tolerance for dishonesty.",
+        " Professionalism: Our services are of high standards and driven by skillfull and civil workforce.",
+        "Accountability: We provide professional services to humanity, take responsibilities for our actions and accountable to the stakeholders.",
+        "Diligent: Our passion for the wellbeing of the less privileged galvanizes our performance with utmost care and focus.",
+      ],
     },
   ];
 
@@ -28,7 +43,7 @@ const Programs = () => {
   };
 
   return (
-    <div className="lg:container  sm:py-12 bg-white text-black">
+    <div className="lg:container sm:py-12 bg-white text-black">
       <div className="flex flex-col items-center justify-center pt-2">
         <h2 className="text-4xl text-center font-montserrat font-semibold">
           MESH NGO
@@ -52,22 +67,30 @@ const Programs = () => {
             </motion.div>
           ))}
         </div>
-        <div className="w-full p-4 md:pl-8">
+        <div className="w-full px-4 md:pl-8">
           <AnimatePresence mode="wait">
             {tabs
               .filter((tab) => tab.title === activeTab)
               .map((tab, index) => (
-                <motion.p
+                <motion.div
                   key={index}
                   variants={SlideRight(0.6)}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="text-gray-700 font-medium text-base leading-6 text-justify"
+                  className="text-gray-700 font-medium text-sm leading-6 text-justify"
                 >
-                  {tab.content}
-                </motion.p>
+                  <p>{tab.content}</p>
+                
+                  {tab.list && (
+                    <ul className="list-disc list-inside mt-4 text-sm text-gray-600">
+                      {tab.list.map((item, i) => (
+                        <li key={i}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
+                </motion.div>
               ))}
           </AnimatePresence>
         </div>
