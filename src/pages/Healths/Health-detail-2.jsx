@@ -9,12 +9,12 @@ const HealthDetails2 = () => {
       <div className="">
         <video
           className="w-full h-screen object-cover"
-          src="https://youtu.be/QKOv-pzvvsM"
+          src="https://youtu.be/QKOv-pzvvsM?si=rNoU9-Ee3QcI0cUy"
           autoPlay
           loop
           muted
           preload="metadata"
-          poster="https://youtu.be/QKOv-pzvvsM"
+          poster="https://youtu.be/QKOv-pzvvsM?si=rNoU9-Ee3QcI0cUy"
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
