@@ -5,6 +5,7 @@ import NumberCounter from "../../components/NumberCounter/NumberCounter";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
 import Programs from "../../components/Programs/Programs";
 import GalleryImage from "../../components/Gallery/Gallery";
+import Healths from "../../pages/Healths/Healths";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <NumberCounter />
       <WhyChooseUs />
       <Programs />
+      <Healths />
       <GalleryImage />
     </main>
   );
