@@ -2,21 +2,19 @@ import React from "react";
 
 const HealthDetails2 = () => {
   return (
-    <div className="px-4 lg:px-8 mt-20 py-12 space-y-5">
+    <div className="px-4 lg:px-8 mt-16 py-12 space-y-5">
       <h1 className="text-center text-2xl lg:text-4xl font-bold text-secondary">
         MESH in Pegi for Medical Outreach.
       </h1>
-      <div className="">
-        <video
-          className="w-full h-screen object-cover"
-          src="https://youtu.be/QKOv-pzvvsM?si=rNoU9-Ee3QcI0cUy"
-          autoPlay
-          loop
-          muted
-          preload="metadata"
-          poster="https://youtu.be/QKOv-pzvvsM?si=rNoU9-Ee3QcI0cUy"
-        />
+      <div className="mx-auto h-96">
+        <iframe
+          className="w-full h-full object-cover"
+          src="https://www.youtube.com/embed/QKOv-pzvvsM?autoplay=1&loop=1&mute=1"
+          title="YouTube video"
+          allow="autoplay; encrypted-media"
+          allowFullScreen></iframe>
       </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <span>
           <img

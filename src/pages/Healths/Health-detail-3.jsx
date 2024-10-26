@@ -7,6 +7,7 @@ const HealthDetails3 = () => {
         WHAT YOU NEED TO KNOW ABOUT CERVICAL CANCER AND HPV VACCINE{" "}
       </h1>
       <img
+        className="mx-auto"
         src="https://www.meshnigeria.org/wp-content/uploads/2023/09/hpv-virus.tmb-large.jpg"
         alt="MESH Nigeria"
       />
