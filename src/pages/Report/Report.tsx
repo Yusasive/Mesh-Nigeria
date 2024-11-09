@@ -3,6 +3,8 @@ import localPdf1 from "../../assets/documents/REPORT-OF-2023-MESH-ELECTION-OBSER
 import localPdf2 from "../../assets/documents/MESH-Final-2022-Report.pdf";
 import localPdf3 from "../../assets/documents/Final-Report-on-The-Annual-Sensitization-Workshop-for-Students-in-Senior-Secondary-Schools-in-Abuja.pdf";
 import localPdf4 from "../../assets/documents/Sensitization-on-good-governance-Communique.pdf";
+import GalleryImage from "../../components/Gallery/Gallery";
+import Healths from "../../pages/Healths/Healths";
 
 const reports = [
   {
@@ -43,6 +45,11 @@ const Report = () => {
           </h3>
         </div>
       ))}
+      <div>
+        {" "}
+        <GalleryImage />
+        <Healths />
+      </div>
     </div>
   );
 };
