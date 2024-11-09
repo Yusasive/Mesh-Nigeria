@@ -3,6 +3,7 @@ import NavbarBanner from "../../components/Navbar/NavbarBanner";
 import Hero from "../../components/Hero/Hero";
 import NumberCounter from "../../components/NumberCounter/NumberCounter";
 import WhyChooseUs from "../../components/WhyChooseUs/WhyChooseUs";
+// import WhyUs from "../../components/WhyChooseUs/WhyUs";
 import { motion } from "framer-motion";
 import { FaPhone, FaMailBulk } from "react-icons/fa";
 // import Programs from "../../components/Programs/Programs";
@@ -17,6 +18,7 @@ const Home = () => {
       <NavbarBanner />
       <Hero />
       <WhyChooseUs />
+      {/* <WhyUs /> */}
       <NumberCounter />
       {/* <Programs /> */}
       <motion.div
