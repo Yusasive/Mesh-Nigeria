@@ -117,9 +117,9 @@ const Hero = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className="bg-custom-bg12 bg-cover bg-center h-[300px] lg:h-[500px] flex items-end justify-center rounded-3xl">
-              {/* <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">
+              <h1 className="text-xl lg:text-3xl p-6 font-bold text-primary text-center">
                 JAIZ CHARITY AND DEVELOPMENT FOUNDATION
-              </h1> */}
+              </h1>
             </div>
           </SwiperSlide>
           <SwiperSlide>
