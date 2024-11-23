@@ -17,7 +17,7 @@ const Hero = () => {
   };
   return (
     <div className="flex flex-col lg:max-h-max relative px-4 lg:px-8 mt-12 md:mt-0 mb-4 lg:my-12">
-      <div className="flex flex-col justify-center pb-14 pt-14 md:pt-0 w-full">
+      <div className="flex flex-col justify-center pb-2 md:pb-14 pt-14 md:pt-0 w-full">
         <div className="text-center md:text-left space-y-2">
           <motion.h1
             variants={SlideRight(0.4)}
