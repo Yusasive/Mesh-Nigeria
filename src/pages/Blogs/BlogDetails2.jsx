@@ -224,9 +224,9 @@ const BlogDetails2 = () => {
           project in 5 states in Nigeria, Future Assured Initiative, the NGO of
           the First Lady of the Federal Republic of Nigeria Hajia Aisha
           Muhammadu Buhari and the Nigerian Supreme Council for Islamic Affairs
-          (NSCIA) through its NGO Mission for Education, Social and Health
-          (MESH) conceived the idea to bring all concerned stakeholders together
-          to discuss the way forward towards repositioning and reducing the
+          (NSCIA) through its NGO Education, Social, and Health Mission (MESH)
+          conceived the idea to bring all concerned stakeholders together to
+          discuss the way forward towards repositioning and reducing the
           increased divorce within the Muslim family.
         </p>
         <p className="text-base font-normal text-justify">

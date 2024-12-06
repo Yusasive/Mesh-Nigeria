@@ -22,10 +22,10 @@ const SocialDetails1 = () => {
         project in 5 states in Nigeria, Future Assured Initiative, the NGO of
         the First Lady of the Federal Republic of Nigeria, Hajia Aisha Muhammadu
         Buhari and the Nigerian Supreme Council for Islamic Affairs (NSCIA)
-        through its NGO Mission for Education, Social and Health (MESH)
-        conceived the idea to bring all concerned stakeholders together to
-        discuss the way forward towards repositioning and reducing the increased
-        divorce within the Muslim family.
+        through its NGO Education, Social, and Health Mission (MESH) conceived
+        the idea to bring all concerned stakeholders together to discuss the way
+        forward towards repositioning and reducing the increased divorce within
+        the Muslim family.
       </p>
       <p className="text-lg font-normal text-justify">
         Thus, a National Conference on Marriage and Alamajiri Scourge was
@@ -54,15 +54,14 @@ const SocialDetails1 = () => {
           </p>
         </span>
         <span>
-        <img
-        
-          src="https://www.meshnigeria.org/wp-content/uploads/2022/02/Flag-off-ceremony-04ad-502-by-382.jpg"
-          alt="MESH Nigeria"
-        />
-        <p className="text-lg text-primary font-semibold text-center">
-          Male participants from Islamic Organizations.
-        </p>
-      </span>
+          <img
+            src="https://www.meshnigeria.org/wp-content/uploads/2022/02/Flag-off-ceremony-04ad-502-by-382.jpg"
+            alt="MESH Nigeria"
+          />
+          <p className="text-lg text-primary font-semibold text-center">
+            Male participants from Islamic Organizations.
+          </p>
+        </span>
       </div>
       <p className="text-lg font-normal text-justify">
         Thus, a National Conference on Marriage and Alamajiri Scourge was
@@ -81,7 +80,6 @@ const SocialDetails1 = () => {
         ministers, governors, wives of governors, diplomatic corps, ministries
         and departments and Islamic organizations.
       </p>
-     
     </div>
   );
 };

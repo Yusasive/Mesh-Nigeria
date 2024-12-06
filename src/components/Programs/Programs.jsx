@@ -61,8 +61,7 @@ const Programs = () => {
                   ? "active-tab text-white bg-primary m-2 rounded-lg"
                   : ""
               }`}
-              onClick={() => handleTabClick(tab.title)}
-            >
+              onClick={() => handleTabClick(tab.title)}>
               {tab.title}
             </motion.div>
           ))}
@@ -79,10 +78,9 @@ const Programs = () => {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="text-gray-700 font-medium text-sm leading-6 text-justify"
-                >
+                  className="text-gray-700 font-medium text-sm leading-6 text-justify">
                   <p>{tab.content}</p>
-                
+
                   {tab.list && (
                     <ul className="list-disc list-inside mt-4 text-sm text-gray-600">
                       {tab.list.map((item, i) => (

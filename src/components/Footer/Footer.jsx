@@ -68,7 +68,7 @@ const Footer = () => {
                 <ul className="flex flex-col gap-3">
                   <li>
                     <a href="#" className="hover:text-secondary duration-200">
-                      Social Interventions
+                      Social Arbitration
                     </a>
                   </li>
                   <li>
@@ -78,7 +78,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="#" className="hover:text-secondary duration-200">
-                      Health Interventions
+                      Health Procedures
                     </a>
                   </li>
                 </ul>

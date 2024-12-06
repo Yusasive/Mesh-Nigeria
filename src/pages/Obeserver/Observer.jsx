@@ -58,8 +58,8 @@ const Observer = () => {
           Education, Social and Health Mission (MESH), is one of the many
           observers’ group accredited by Independent National Electoral
           Commission (INEC) to observe the 2023 General Elections holding on the
-          25th February for Presidential and National Assembly and 11th March
-          for Governorship and Statehouse Elections.
+          25th ary for Presidential and National Assembly and 11th March for
+          Governorship and Statehouse Elections.
         </p>
         <p className="text-lg font-medium text-justify">
           MESH in achieving its objectives mobilized 658 observers from 34
