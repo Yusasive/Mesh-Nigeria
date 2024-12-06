@@ -9,7 +9,6 @@ const blogs = [
     paragraph1: "MESH is an NGO the National Supreme Council for Islamic Affairs.",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/health-detail-1", 
   },
   {
@@ -18,7 +17,6 @@ const blogs = [
     paragraph1: "MESH in Pegi for Medical Outreach...",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/health-detail-2", 
   },
   {
@@ -27,7 +25,6 @@ const blogs = [
     paragraph1: "Cervical cancer is strongly associated with HPV infection, particularly high-risk strains like HPV-16 and HPV-18.",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/health-detail-3", 
   },
 ];
@@ -63,7 +60,6 @@ const Healths = () => {
           </p>
           <div className="mt-4">
             <span className="text-gray-600">By {blog.author}</span>
-            <span className="text-gray-400 ml-2">{blog.date}</span>
           </div>
         </motion.div>
       ))}

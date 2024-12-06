@@ -4,12 +4,11 @@ import { useNavigate } from "react-router-dom";
 
 const blogs = [
   {
-    title: "Mission for Education, Social and Health",
+    title: "Education, Social, and Health Mission (MESH)",
     image: "https://res.cloudinary.com/ddxssowqb/image/upload/v1728554062/MESH-001-400x250_zvgyy9.jpg",
     paragraph1: "MESH is an NGO the National Supreme Council for Islamic Affairs.",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/blog-detail-1", 
   },
   {
@@ -18,7 +17,6 @@ const blogs = [
     paragraph1: "Marriage Counseling MESH implemented a project Marriage Counseling Seminar on Marriage Education and Better Parenting.",
     paragraph2: "MESH implemented a project Marriage Counseling Seminar on Marriage Education and Better Parenting. The objective of the marriage counseling was for people to understand the essence of marriage and the factors that can influence marriage stability.",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/blog-detail-2", 
   },
 ];
@@ -54,7 +52,6 @@ const Blogs = () => {
           </p>
           <div className="mt-4">
             <span className="text-gray-600">By {blog.author}</span>
-            <span className="text-gray-400 ml-2">{blog.date}</span>
           </div>
         </motion.div>
       ))}

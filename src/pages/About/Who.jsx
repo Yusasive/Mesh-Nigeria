@@ -10,10 +10,9 @@ const Who = () => {
         variants={SlideLeft}
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+        transition={{ duration: 0.8 }}>
         <p className="font-medium text-lg text-justify mb-5">
-          Mission for Education, Social and Health (MESH) is the NGO of the
+          Education, Social, and Health Mission (MESH) is the NGO of the
           Nigerian Supreme Council for Islamic Aﬀairs (NSCIA) whose primary
           focus is engaging in da’wah with creativity and innovation. We
           mobilise resources to promote qualitative education, social and
@@ -29,8 +28,7 @@ const Who = () => {
         variants={SlideLeft}
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
-      >
+        transition={{ duration: 0.8 }}>
         <motion.img
           src="https://res.cloudinary.com/ddxssowqb/image/upload/v1728505589/about1_emjolu.jpg"
           alt="WhoImage1"

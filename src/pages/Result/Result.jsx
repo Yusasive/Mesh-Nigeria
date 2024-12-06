@@ -4,13 +4,9 @@ import { motion } from "framer-motion";
 
 function Result() {
   const imageUrls = [
-    "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510214/042culled-from-facebooky_coiaev.jpg",
-    "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510214/042culled-from-facebooky_coiaev.jpg",
     "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510212/044culled-from-facebooky_xrniti.jpg",
     "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510213/034culled-from-facebooky_ufzawn.jpg",
     "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510213/053culled-from-facebooky_fb7b3q.jpg",
-    "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510214/042culled-from-facebooky_coiaev.jpg",
-    "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510214/042culled-from-facebooky_coiaev.jpg",
     "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510213/046culled-from-facebooky_kriqcx.jpg",
     "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510214/032culled-from-facebooky_worsr9.jpg",
     "https://res.cloudinary.com/ddxssowqb/image/upload/v1728510214/025culled-from-facebooky_i3z1pc.jpg",

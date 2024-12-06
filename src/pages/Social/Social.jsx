@@ -9,7 +9,6 @@ const blogs = [
     paragraph1: "FLAG – OFF OF THE “MARRIAGE COUNSELING PROJECT” WITH A ROBUST MENTION OF EDUCATION AND HEALTH",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/social-detail-1", 
   },
   {
@@ -18,7 +17,6 @@ const blogs = [
     paragraph1: "MESH implemented a project Marriage Counseling Seminar on Marriage Education and Better Parenting.",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/social-detail-2", 
   },
   {
@@ -27,7 +25,6 @@ const blogs = [
     paragraph1: "The Project “Mitigating the Problems of Marriage Instability and Divorce in Nigeria” is   collaboration between Future Assured Initiative and Nigerian Supreme Council for Islamic Affairs (NSCIA).",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/social-detail-3", 
   },
   {
@@ -36,7 +33,6 @@ const blogs = [
     paragraph1: "Life Skills for the Training of  Deaf communities is a strategic approach for empowering the deaf with knowledge that would keep them self-employed.",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/social-detail-4",  
   },
   {
@@ -45,7 +41,6 @@ const blogs = [
     paragraph1: "As part of its social program, MESH organized a drug abuse sensitization to commercial motor drivers in 6 motor parks in Abuja namely Jabi, Karu, Nyanya, Maraba 1 &2, and New Nyanya from May 2018 through July 2018.",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/social-detail-5", 
   },
   {
@@ -54,7 +49,6 @@ const blogs = [
     paragraph1: "Base on partly the lessons learnt on marriage education project implemented by MESH in FCT and 6 States, and partly of its efforts to elevate the status of Muslim women and reducing their rate of dependency on their husbands, .",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/social-detail-6", 
   },
   {
@@ -63,7 +57,6 @@ const blogs = [
     paragraph1: "In an imperative need to alleviate the challenges of the hunger in the communities, MESH under the auspices of NSCIA distributed food items to people in need.",
     paragraph2: "",
     author: "MESH NIGERIA",
-    date: "February 10, 2022",
     link: "/social-detail-7", 
   },
 ];
@@ -99,7 +92,6 @@ const Social = () => {
           </p>
           <div className="mt-4">
             <span className="text-gray-600">By {blog.author}</span>
-            <span className="text-gray-400 ml-2">{blog.date}</span>
           </div>
         </motion.div>
       ))}

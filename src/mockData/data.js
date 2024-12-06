@@ -14,9 +14,9 @@ export const NavbarMenu = [
     title: "Programmes",
     link: "#",
     subMenu: [
-      { id: 31, title: "Social Interventons", link: "/programmes/social" },
+      { id: 31, title: "Social Arbitration", link: "/programmes/social" },
       { id: 32, title: "Education Interventions", link: "/programmes/education" },
-      { id: 33, title: "Health Interventions", link: "/programmes/healths" },
+      { id: 33, title: "Health Procedures", link: "/programmes/healths" },
     ],
   },
   {
